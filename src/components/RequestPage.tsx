@@ -24,12 +24,12 @@ export default function RequestPage() {
         method="POST"
         className="w-full max-w-lg bg-white shadow-xl rounded-2xl p-8 space-y-6"
       >
-        <h1 className="flex items-center justify-center gap-2 text-2xl font-bold text-gray-800">
+        <h2 className="flex items-center justify-center gap-2 text-2xl font-bold text-gray-800">
           <a href="/" className="text-gray-600 hover:text-gray-900 transition">
             <ArrowLeft className="w-5 h-5 flex justify-start" />
           </a>
           Request a Website
-        </h1>
+        </h2>
 
         {/* Full Name */}
         <div className="space-y-2">

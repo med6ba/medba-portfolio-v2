@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 // Import certificate images
 import cert1 from "@/assets/cert1.jpg"; // Web Developer - Sup'ISI
+import supisi from "@/assets/sup'isi.jpeg"; // Web Developer - Sup'ISI
 import cert2 from "@/assets/cert2.jpg"; // Responsive Web Design - freeCodeCamp
 import cert3 from "@/assets/cert3.jpg"; // UI/UX design basics - M3aarf
 import cert4 from "@/assets/cert4.jpg"; // Digital Skills: UX - Accenture
@@ -18,7 +19,7 @@ const CertificatesSection = () => {
     {
       title: "Web Developer",
       issuer: "Sup'ISI",
-      link: "https://media.licdn.com/dms/image/v2/D562DAQFQQyEwCzGf7A/profile-treasury-image-shrink_1280_1280/B56ZZIVXzGGsAQ-/0/1744970284761?e=1756512000&v=beta&t=eIY0eb_GaiIXv8RbnOwGRj-o4tJJuNAlRlo7q9m241k",
+      link: supisi,
       image: cert1,
     },
     {

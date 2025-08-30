@@ -30,8 +30,8 @@ const ProjectsSection = () => {
       title: "Medba Portfolio V1",
       image: project3Image,
       technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-      repoLink: "https://github.com/med6ba/medba-portfolio",
-      demoLink: "https://medba.vercel.app",
+      repoLink: "https://github.com/med6ba/medba-portfolio-v1",
+      demoLink: "https://med6ba.vercel.app",
       description:
         "My very first portfolio, showcasing my projects and skills while learning web development.",
     },
