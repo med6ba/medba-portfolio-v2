@@ -54,7 +54,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo / Name */}
         <div className="font-extrabold text-xl tracking-wide cursor-pointer text-primary">
-          Medba.Dev
+          <a href="/">Medba.Dev</a>
         </div>
 
         {/* Desktop Menu */}

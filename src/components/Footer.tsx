@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white text-gray-800 py-4 border-t shadow-sm">
+    <footer className="bg-white text-gray-800 py-4 border-t">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3">
         {/* Copyright */}
         <p className="text-sm font-medium text-center md:text-left">
@@ -36,7 +36,7 @@ const Footer = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full hover:bg-primary transition-colors shadow-sm hover:shadow-md group"
+              className="p-2 rounded-full hover:bg-primary transition-colors shadow-lg group"
               aria-label={social.label}
             >
               <social.icon
@@ -49,7 +49,7 @@ const Footer = () => {
           {/* Back to Top Button */}
           <button
             onClick={scrollToTop}
-            className="p-2 rounded-full hover:bg-primary transition-colors shadow-sm hover:shadow-md group"
+            className="p-2 rounded-full hover:bg-primary transition-colors shadow-lg group"
             aria-label="Back to Top"
           >
             <ArrowUp

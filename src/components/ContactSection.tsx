@@ -7,7 +7,7 @@ import { Send } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="pt-20 pb-10">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto animate-slide-up">
           {/* Section Header */}
@@ -15,7 +15,7 @@ const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 mt-8">
               Get In Touch
             </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-4"></div>
+            <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               I'm always open to discussing new opportunities, interesting
               projects, or just having a conversation about technology and

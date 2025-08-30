@@ -32,7 +32,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/30"
+      className="min-h-screen flex items-center justify-center from-background to-secondary/30"
     >
       <div className="container mx-auto px-6 text-center">
         <div className="animate-fade-in">
