@@ -51,7 +51,7 @@ const Navigation = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-6 flex items-center justify-between">
         {/* Logo / Name */}
         <div className="font-extrabold text-xl tracking-wide cursor-pointer text-primary">
           <a href="/">Medba.Dev</a>

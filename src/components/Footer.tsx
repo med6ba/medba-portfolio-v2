@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white text-gray-800 py-4 border-t">
+    <footer className="bg-white text-gray-800 py-6 border-t">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3">
         {/* Copyright */}
         <p className="text-sm font-medium text-center md:text-left">

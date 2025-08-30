@@ -15,13 +15,13 @@ const ServicesSection = () => {
       icon: Code,
       title: "Website Development",
       description:
-        "Building robust, scalable web applications using modern technologies like React, Node.js, and TypeScript for optimal performance.",
+        "Developing fast, secure, and responsive websites with modern technologies to deliver seamless performance and scalability.",
     },
     {
       icon: Settings,
       title: "Website Maintenance",
       description:
-        "Providing ongoing support, updates, and optimization to keep your website secure, fast, and running smoothly at all times.",
+        "Providing ongoing support, updates, and optimization for 3+ months after delivery to keep your website secure and up to date.",
     },
   ];
 
