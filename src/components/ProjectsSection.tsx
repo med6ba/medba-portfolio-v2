@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 import project1Image from "@/assets/project1.png";
 import project2Image from "@/assets/project2.png";
+import project3Image from "@/assets/project3.png";
 import { toast } from "@/components/ui/use-toast";
 
 const ProjectsSection = () => {
@@ -23,7 +24,16 @@ const ProjectsSection = () => {
       repoLink: "https://github.com/med6ba/ismoshare",
       demoLink: null,
       description:
-        "A platform for ISMO that centralizes resources and connects students, teachers, and administration.",
+        "A platform for ISMO Tetouan that centralizes resources and connects students, teachers, and administration.",
+    },
+    {
+      title: "Medba Portfolio V1",
+      image: project3Image,
+      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      repoLink: "https://github.com/med6ba/medba-portfolio",
+      demoLink: "https://medba.vercel.app",
+      description:
+        "My very first portfolio, showcasing my projects and skills while learning web development.",
     },
   ];
 

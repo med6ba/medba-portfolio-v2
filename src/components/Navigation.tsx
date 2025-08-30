@@ -4,9 +4,24 @@ import { Menu, X } from "lucide-react";
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+
+      // Detect current active section
+      const sections = document.querySelectorAll("section[id]");
+      let current = "home";
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 150 && rect.bottom >= 150) {
+          current = section.id;
+        }
+      });
+      setActiveSection(current);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -25,66 +40,74 @@ const Navigation = () => {
     { id: "certificates", label: "Certificates" },
     { id: "projects", label: "Projects" },
     { id: "services", label: "Services" },
+    { id: "contact", label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-base ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-sm shadow-custom-md"
+          ? "bg-background/80 backdrop-blur-md shadow-custom-md"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-center md:justify-center">
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary transition-base font-medium"
-              >
-                {item.label}
-              </button>
-            ))}
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-foreground hover:text-primary transition-base font-medium"
-            >
-              Contact
-            </button>
-          </div>
-
-          {/* Mobile Burger */}
-          <div className="md:hidden flex items-center absolute right-6">
-            <button onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+        {/* Logo / Name */}
+        <div className="font-extrabold text-xl tracking-wide cursor-pointer text-primary">
+          Medba.Dev
         </div>
 
-        {/* Mobile Menu Items */}
-        {isOpen && (
-          <div className="md:hidden mt-4 flex flex-col space-y-3 bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-md">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary transition-base font-medium text-left"
-              >
-                {item.label}
-              </button>
-            ))}
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center space-x-8">
+          {navItems.map((item) => (
             <button
-              onClick={() => scrollToSection("contact")}
-              className="text-foreground hover:text-primary transition-base font-medium text-left"
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className={`relative font-medium transition-colors ${
+                activeSection === item.id
+                  ? "text-primary"
+                  : "text-foreground hover:text-primary"
+              }`}
             >
-              Contact
+              {item.label}
+              {/* underline animation */}
+              <span
+                className={`absolute left-0 -bottom-1 h-0.5 bg-primary transition-all duration-300 ${
+                  activeSection === item.id
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              />
             </button>
-          </div>
-        )}
+          ))}
+        </div>
+
+        {/* Mobile Burger */}
+        <div className="md:hidden flex items-center">
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={26} /> : <Menu size={26} />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile Menu Items */}
+      {isOpen && (
+        <div className="md:hidden flex flex-col space-y-4 bg-background/95 backdrop-blur-md p-6 rounded-lg shadow-custom-md animate-slide-down">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className={`font-medium text-left transition-colors ${
+                activeSection === item.id
+                  ? "text-primary"
+                  : "text-foreground hover:text-primary"
+              }`}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
