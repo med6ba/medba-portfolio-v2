@@ -64,7 +64,7 @@ const ServicesSection = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <Button
               size="lg"
               variant="default"
@@ -76,7 +76,7 @@ const ServicesSection = () => {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
