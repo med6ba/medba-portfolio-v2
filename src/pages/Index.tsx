@@ -13,17 +13,11 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <hr className="my-12 border-t border-gray-300" />
       <AboutSection />
-      <hr className="my-12 border-t border-gray-300" />
       <CertificatesSection />
-      <hr className="my-12 border-t border-gray-300" />
       <TechStack />
-      <hr className="my-12 border-t border-gray-300" />
       <ProjectsSection />
-      <hr className="my-12 border-t border-gray-300" />
       <ServicesSection />
-      <hr className="my-12 border-t border-gray-300" />
       <ContactSection />
       <Footer />
     </div>
