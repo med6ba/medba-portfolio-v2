@@ -24,61 +24,53 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex justify-center gap-2">
-                Send Me a Message
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form
-                action="https://formspree.io/f/xqadpjgv"
-                method="POST"
-                className="space-y-6"
+          <Card className="p-5 shadow-lg rounded-xl">
+            <form
+              action="https://formspree.io/f/xqadpjgv"
+              method="POST"
+              className="space-y-6"
+            >
+              <div className="space-y-2">
+                <Label htmlFor="name">Full Name</Label>
+                <Input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="message">Message</Label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  placeholder="Say hello!"
+                  required
+                />
+              </div>
+
+              <Button
+                type="submit"
+                variant="default"
+                className="w-full flex items-center justify-center gap-2 py-3"
               >
-                <div className="space-y-2">
-                  <Label htmlFor="name">Full Name</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Your full name"
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="your.email@example.com"
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Say hello!"
-                    rows={6}
-                    required
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  variant="default"
-                  className="w-full flex items-center justify-center gap-2"
-                >
-                  <Send size={20} />
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
+                <Send size={20} />
+                Send Message
+              </Button>
+            </form>
           </Card>
         </div>
       </div>

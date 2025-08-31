@@ -36,7 +36,7 @@ const ServicesSection = () => {
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I offer comprehensive web development services to help bring your
+              I offer web development services to help bring your
               digital vision to life, from initial design concepts to ongoing
               maintenance and support.
             </p>
@@ -64,7 +64,7 @@ const ServicesSection = () => {
           </div>
 
           {/* CTA Button */}
-          {/* <div className="text-center">
+          <div className="text-center">
             <Button
               size="lg"
               variant="default"
@@ -76,7 +76,7 @@ const ServicesSection = () => {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

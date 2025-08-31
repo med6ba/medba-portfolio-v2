@@ -38,6 +38,7 @@ const Navigation = () => {
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
     { id: "certificates", label: "Certificates" },
+    { id: "techstack", label: "Tech Stack" },
     { id: "projects", label: "Projects" },
     { id: "services", label: "Services" },
     { id: "contact", label: "Contact" },
@@ -58,7 +59,7 @@ const Navigation = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
             <button
               key={item.id}

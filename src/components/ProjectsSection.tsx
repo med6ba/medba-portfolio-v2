@@ -26,15 +26,6 @@ const ProjectsSection = () => {
       description:
         "A platform for ISMO Tetouan that centralizes resources and connects students, teachers, and administration.",
     },
-    {
-      title: "Medba Portfolio V1",
-      image: project3Image,
-      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-      repoLink: "https://github.com/med6ba/medba-portfolio-v1",
-      demoLink: "https://med6ba.vercel.app",
-      description:
-        "My very first portfolio, showcasing my projects and skills while learning web development.",
-    },
   ];
 
   return (

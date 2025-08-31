@@ -1,5 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap } from "lucide-react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { FaProjectDiagram } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
 import school1 from "../assets/high-school.jpg";
 import school2 from "../assets/1337-logo.jpg";
 import school3 from "../assets/ofppt-logo.jpg";
@@ -44,12 +45,12 @@ const AboutSection = () => {
           </div>
 
           {/* About Text */}
-          <div className="mb-16 animate-fade-in">
+          <div className="mb-12 animate-fade-in">
             <p className="text-lg text-muted-foreground leading-relaxed text-justify max-w-3xl mx-auto">
-              I’m Medba, a 19-year-old Full-Stack Web Developer passionate about building
-              clean, responsive, and user-friendly websites. I focus on turning
-              ideas into functional digital experiences while continuously
-              learning and improving my skills.
+              I’m Medba, a 19-year-old Full-Stack Web Developer passionate about
+              building clean, responsive, and user-friendly websites. I focus on
+              turning ideas into functional digital experiences while
+              continuously learning and improving my skills.
             </p>
           </div>
 
@@ -69,7 +70,7 @@ const AboutSection = () => {
 
                   {/* Title as link */}
                   <a
-                    href={edu.link} // رابط كل title
+                    href={edu.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`text-lg font-semibold text-black transition ${
@@ -96,6 +97,26 @@ const AboutSection = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+          {/* Stats Section */}
+          <div className="flex flex-col md:flex-row gap-6 mt-16 animate-slide-up justify-center">
+            <Card className="flex items-center gap-4 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition px-6 py-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-primary">
+                5+
+              </h3>
+              <p className="text-black font-medium text-lg">
+                Years of Experience
+              </p>
+            </Card>
+
+            <Card className="flex items-center gap-4 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition px-6 py-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-primary">
+                10+
+              </h3>
+              <p className="text-black font-medium text-lg">
+                Projects Completed
+              </p>
+            </Card>
           </div>
         </div>
       </div>
