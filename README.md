@@ -28,10 +28,11 @@ npm install
 ```bash
 npm run dev
 ```
-5. Lunch the website:
+5. Launch the website:
 ```bash
 http://localhost:8080
 ```
+⚠️ If the port is busy, Vite will suggest another one.
 
 ## Contributing
 
