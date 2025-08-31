@@ -17,7 +17,10 @@ Welcome to my portfolio repository! This project showcases my work as a Full-Sta
 git clone https://www.github.com/med6ba/medba-portfolio-v2.git
 ```
 2. Open the project folder in your code editor.
-3. Install dependencies:
+```bash
+code medba-portfolio-v2
+```
+4. Install dependencies:
 ```bash
 npm install
 ```
