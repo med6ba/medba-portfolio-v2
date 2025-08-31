@@ -16,15 +16,16 @@ Welcome to my portfolio repository! This project showcases my work as a Full-Sta
 ```bash
 git clone https://www.github.com/med6ba/medba-portfolio-v2.git
 ```
-2. Install dependencies:
+2. Open the project folder in your code editor.
+3. Install dependencies:
 ```bash
 npm install
 ```
-3. Start dev server:
+4. Start dev server:
 ```bash
 npm run dev
 ```
-4. Lunch the website:
+5. Lunch the website:
 ```bash
 http://localhost:8080
 ```
