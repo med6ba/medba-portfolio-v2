@@ -37,7 +37,3 @@ http://localhost:8080
 ## Contributing
 
 Feel free to open issues or submit pull requests if you want to contribute to improving this portfolio.
-
-## License
-
-This project is licensed under the MIT License.
