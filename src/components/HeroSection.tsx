@@ -63,7 +63,7 @@ const HeroSection = () => {
 
           {/* Open to Work Tag */}
           <div className="inline-flex items-center gap-2 bg-green-100 border border-green-300 rounded-full px-4 py-1 text-green-700 font-semibold shadow-sm mb-5">
-            Open to work
+            Open To Work
           </div>
 
           {/* Social Links */}
