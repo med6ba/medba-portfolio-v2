@@ -102,7 +102,7 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row gap-6 mt-16 animate-slide-up justify-center">
             <Card className="flex items-center gap-4 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition px-6 py-4">
               <h3 className="text-3xl md:text-4xl font-bold text-primary">
-                5+
+                3+
               </h3>
               <p className="text-black font-medium text-lg">
                 Years of Experience
