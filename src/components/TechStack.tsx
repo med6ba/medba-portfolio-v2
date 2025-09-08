@@ -19,7 +19,6 @@ import {
 
 const TechStack = () => {
   const tech = [
-    { name: "Bash", icon: SiGnubash, color: "#4EAA25" },
     { name: "C", icon: SiC, color: "#A8B9CC" },
     { name: "Python", icon: SiPython, color: "#3776AB" },
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
@@ -32,8 +31,6 @@ const TechStack = () => {
     { name: "PHP", icon: SiPhp, color: "#777BB4" },
     { name: "MySQL", icon: SiMysql, color: "#4479A1" },
     { name: "Git", icon: SiGit, color: "#F05032" },
-    { name: "GitHub", icon: SiGithub, color: "#181717" },
-    { name: "Vercel", icon: SiVercel, color: "#000000" },
   ];
 
   return (
@@ -53,7 +50,7 @@ const TechStack = () => {
           </div>
 
           {/* Tech Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 animate-slide-up">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 animate-slide-up">
             {tech.map((item, index) => (
               <Card
                 key={index}
